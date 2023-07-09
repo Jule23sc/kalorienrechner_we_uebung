@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalorienrechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="./assets/js/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Kalorienrechner</h1>
+    </header>
+    <main>
+        <form id="kalorienrechner">
+            <section>
+                <article class="inputs">
+                    <div>
+                        <label for="size">Körpergröße (cm)</label>
+                    </div>
+                    <input type="number" id="size">
+                    <div>
+                        <label for="age">Alter (Jahre)</label>
+                    </div>
+                    <input type="number" id="age">
+                    <div>
+                        <label for="weight">Gewicht (kg)</label>
+                    </div>
+                    <input type="number" id="weight">
+                </article>
+                <article class="radio">
+                    <label for="anatomy">Körperbau</label>
+                    <div>
+                        <input type="radio" name="sex" id="female" checked/>
+                        <label for="female">Weiblich</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sex" id="male"/>
+                        <label for="male">Männlich</label> 
+                    </div>
+                </article>
+                <article>
+                    <label for="activitymenu">Arbeits- und Freizeitaktivität</label>
+                    <div>
+                        <select name="activitymenu" id="activitymenu">
+                            <option value="0.95">Schlafen</option>
+                            <option value="1.2">Nur Sitzen oder Liegen</option>
+                            <option value="1.5">Ausschließlich sitzende Tätigkeiten mit wenig oder keiner körperlichen Aktivität in der Freizeit, zb. Büroarbeit</option>
+                            <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, zb. Studierende, Kraftfahrer</option>
+                            <option value="1.9">Überwiegend gehende oder stehende Tätigkeiten, zb. Verkäufer, Kellner, Hausfrauen</option>
+                            <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+                        </select>
+                        <div>
+                            <button type="submit">Berechnen</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="output">
+                <article>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>kcal</th>
+                            <th>kJ</th>
+                        </tr>
+                        <tr>
+                            <td>Grundumsatz</td>
+                            <td id="grundumsatz_kcal"></td>
+                            <td id="grundumsatz_kj"></td>
+                        </tr>
+                        <tr>
+                            <td>Gesamtumsatz</td>
+                            <td id="gesamtumsatz_kcal"></td>
+                            <td id="gesamtumsatz_kj"></td>
+                        </tr>
+                    </table>
+                    <div>
+                        <p>*Das Ergebnis des Rechners sollten Sie als Orientierungswert ansehen, <br>da es verschiedene Fehlermöglichkeiten gibt wie abweichender Grundumsatz, falsche Zeiteinschätzung, etc.</p>
+                    </div>
+                </article>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

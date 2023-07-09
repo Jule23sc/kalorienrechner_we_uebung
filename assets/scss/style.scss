@@ -1,0 +1,69 @@
+//general
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightskyblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    height: 800px;
+    text-align: center;
+    width: 1200px;
+}
+//body//header
+h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+//body//section input
+input {
+    border-radius: 10px;
+    background-color: mistyrose;
+}
+.inputs {
+    margin-bottom: 30px;
+    label {
+        line-height: 30px;
+    }
+}
+.radio {
+    margin-bottom: 30px;
+    label:nth-of-type(1){
+        line-height: 25px;
+    }
+}
+select {
+    border-radius: 10px;
+    background-color: mistyrose;
+    margin-bottom: 10px;
+}
+button {
+    border-radius: 10px;
+    background-color: lightsalmon;
+    margin-bottom: 30px;
+}
+//body//section output//table
+table {
+    background-color: lightsalmon;
+    border-radius: 4px;
+    line-height: 160%;
+    margin-left: 480px;
+    margin-bottom: 30px;
+    width: 250px;
+
+    td {
+        text-align: start;
+    }
+
+    th {
+        background-color: mistyrose;
+        border-radius: 2px;
+        text-align: center;
+    }
+}
+p {
+    font-size: 10px;
+    margin-left: 45px;
+}
